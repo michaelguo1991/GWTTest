@@ -1,0 +1,16 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <g:HTMLPanel>
+        <div class="container">
+	      <form class="form-signin">
+	        <h2 class="form-signin-heading">Please sign in</h2>
+	        <g:TextBox ui:field="email" styleName="form-control"></g:TextBox>
+	        <input type="password" class="form-control" placeholder="Password"></input>
+	        <label class="checkbox">
+	          <input type="checkbox" value="remember-me"> Remember me</input>
+	        </label>
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	      </form>
+	    </div>
+    </g:HTMLPanel>
+</ui:UiBinder>
