@@ -16,6 +16,10 @@ public class Helloworld implements EntryPoint {
 	public void onModuleLoad() {
 	    LoginForm login = new LoginForm();
 		RootPanel.get().add(login);
+
+		// Add login button in the login page
+		Button loginBtn = new Button("Login");
+		RootPanel.get().add(loginBtn);
 	}
 
 	private void setUpGui() {
