@@ -23,4 +23,8 @@ public class NewCustomScrollPanel extends CustomScrollPanel{
 			});
 		}
 	}
+
+	public void test() {
+		
+	}
 }
