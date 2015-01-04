@@ -1,3 +1,6 @@
 .global {
 	background: #000;
 }
+.local {
+	font-size: 10px;
+}
