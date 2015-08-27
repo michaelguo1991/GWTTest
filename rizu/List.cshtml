@@ -1,0 +1,33 @@
+﻿@model Dictionary<string, string>
+@section headContent {
+    <link rel="canonical" href="http://car.ctrip.com/sitemap/hwjieji" />
+    <link rel="stylesheet" type="text/css" href="@AppSetting.ResURL/css/shopping.css?v=@AppSetting.ResNo"/>
+}
+@section footerContent {
+    <script type="text/javascript" data-main="main" src="@AppSetting.PubResURL/js/require.js?v=@AppSetting.PubResNo"></script>
+    <script type="text/javascript">
+        window.BackupArgs=@Html.Raw(Model.ToJson());
+    </script>
+}
+<div class="out-wrap" id="list-body">
+    <div class="base-wrap">
+        <div id="search-wrapper">
+            <div class="service-loading ld_ctrip">
+            </div>
+        </div>
+        <div id="list-wrapper">
+            <div id="loading" style="display: none"></div>
+            <div id="error" style="display: none"></div>
+            <div id="filter" style="display: none"></div>
+            <div id="list-box" style="display: none" class="content_wrap clearfix">
+                <div id="product-list" class="con_left fl"></div>
+                <div class="con-right fl">
+                    <div id="hotel" class="cr_site ld_xll"></div>
+                    @Html.Partial("ListExplain")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*@Html.Action("ShoppingSEO", new { Pattern = Model["ptType"], CityID = Model["cid"], Code = Model["locCd"] })*@
